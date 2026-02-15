@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback Form</title>
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+
+        main {
+            width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid #ccc;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            background-color: green;
+            color: white;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 style="text-align:center;">Student Feedback Form</h1>
+</header>
+
+<main>
+    <form>
+
+        <section>
+            <label>Name:</label>
+            <input type="text" name="name" required>
+        </section>
+
+        <section>
+            <label>Email:</label>
+            <input type="email" name="email" required>
+        </section>
+
+        <section>
+            <label>Department:</label>
+            <select required>
+                <option value="">Select Department</option>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>Mechanical</option>
+            </select>
+        </section>
+
+        <section>
+            <label>Rating:</label><br>
+
+            <input type="radio" name="rating" required> Excellent
+            <input type="radio" name="rating"> Good
+            <input type="radio" name="rating"> Average
+        </section>
+
+        <section>
+            <label>Suggestions:</label>
+            <textarea rows="4"></textarea>
+        </section>
+
+        <input type="submit">
+
+    </form>
+</main>
+</body>
+</html>
